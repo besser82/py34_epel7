@@ -11,7 +11,7 @@ Bug filed and initial attempt at a patch by Bohuslav Kabrda.
 diff --git a/Lib/modulefinder.py b/Lib/modulefinder.py
 --- a/Lib/modulefinder.py
 +++ b/Lib/modulefinder.py
-@@ -287,7 +287,7 @@ class ModuleFinder:
+@@ -290,7 +290,7 @@ class ModuleFinder:
              if fp.read(4) != imp.get_magic():
                  self.msgout(2, "raise ImportError: Bad magic number", pathname)
                  raise ImportError("Bad magic number in %s" % pathname)
